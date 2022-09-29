@@ -15,4 +15,4 @@ This project uses SQLEXPRESS. Set the connection string to your database via app
 
 3. In the package manager console, run 'Add-Migration Migration1''
 
-4. In the package manager console, run 'Update Database'
+4. In the package manager console, run 'Update-Database'

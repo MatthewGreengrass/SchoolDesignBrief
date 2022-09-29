@@ -1,0 +1,16 @@
+@model ContactModel
+
+@{
+    ViewBag.Title = "MVC Contact";
+}
+
+<h2>Contact form - MVC</h2>
+
+<form id="contact-form" 
+      method="post" 
+      asp-action="Contact" 
+      asp-controller="Home" role="form">
+
+    <partial name="_Contact" model="@Model" />
+    @*<partial name="_Class" model="@Model" />*@
+</form>

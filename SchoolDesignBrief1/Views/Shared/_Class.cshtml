@@ -1,0 +1,28 @@
+@model IClassModel
+
+@functions{
+
+}
+
+<div class="controls">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label asp-for="ClassName"></label>
+                <textarea asp-for="ClassName" class="form-control" placeholder="Class Name *" rows="4"></textarea>
+                <div class="help-block with-errors">
+                    <span class="text-danger" asp-validation-for="ClassName"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label asp-for="ClassDescription"></label>
+                <textarea asp-for="ClassDescription" class="form-control" placeholder="Class Description *" rows="4"></textarea>
+                <div class="help-block with-errors">
+                    <span class="text-danger" asp-validation-for="ClassDescription"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

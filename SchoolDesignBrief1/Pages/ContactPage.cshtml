@@ -1,0 +1,34 @@
+@page "/razor-page/contact"
+@model SchoolDesignBrief1.Pages.ContactPage
+
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "Razor Page Contact";
+
+    
+}
+
+@*@functions{submitForms()
+    public static void 
+    {
+        GetElementById("form1").submit();
+        GetElementById("form2").submit();
+    }
+}*@
+
+<h2>Contact Us - Razor Page</h2>
+
+<form id="contact-form"
+      asp-page="ContactPage"
+      method="post" role="form">
+    <partial name="_Class" model="@Model"/>
+    <partial name="_Contact" model="@Model"/>
+</form>
+
+@*<form id="class-form"
+      asp-page="ContactPage"
+      method="post" role="form">
+    <partial name="_Class" model="@Model"/>
+    <partial name="_Contact" model="@Model"/>
+</form>*@
+

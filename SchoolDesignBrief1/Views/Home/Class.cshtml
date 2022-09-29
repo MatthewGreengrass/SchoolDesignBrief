@@ -1,0 +1,16 @@
+@model ClassModel
+
+@{
+    ViewBag.Title = "MVC Class";
+}
+
+<h2>Class form - MVC</h2>
+
+<form id="class-form" 
+      method="post" 
+      asp-action="Class" 
+      asp-controller="Home" role="form">
+
+    <partial name="_Class" model="@Model" />
+
+</form>
